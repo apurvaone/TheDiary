@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">The Diary</string>
+    <string name="add_word">Add Page</string>
 </resources>
