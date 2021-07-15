@@ -32,8 +32,8 @@
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
                 android:maxLines="1"
-                android:padding="10dp"
-                android:text="My first page of diary looks awesome !!"
+                android:paddingStart="10dp"
+                android:text="@string/my_first_page_of_diary_looks_awesome"
                 android:textColor="#090808"
                 android:textSize="18sp" />
 
@@ -42,10 +42,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="top|right"
-                android:text="date"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="3dp"
-                android:textSize="15sp" />
+                android:fontFamily="sans-serif-black"
+                android:text="date"
+                android:textSize="15sp"
+                android:textStyle="bold" />
 
 
 
@@ -60,7 +62,7 @@
             android:ellipsize="end"
             android:padding="8dp"
             android:maxLines="3"
-            android:text="Today was awesome day of my life i resumed my intense study after a lot of day and i am feeling better it's awesome feeling also i gave a awesome viva of subject software engg."/>
+            android:text="@string/contenttext"/>
 
 
     </LinearLayout>
