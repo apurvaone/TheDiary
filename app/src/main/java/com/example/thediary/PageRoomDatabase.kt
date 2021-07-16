@@ -9,7 +9,7 @@ import androidx.room.RoomDatabase
 
 public abstract class PageRoomDatabase:RoomDatabase()
 {
-    abstract fun wordDao(): PageDao
+    abstract fun pageDao(): PageDao
 
     companion object {
         // Singleton prevents multiple instances of database opening at the
