@@ -1,4 +1,10 @@
 <resources>
+
+
+    <string name="hint_word">Word...</string>
+    <string name="button_save">Save</string>
+    <string name="empty_not_saved">Word not saved because it is empty.</string>
+
     <string name="app_name">The Diary</string>
     <string name="add_word">Add Page</string>
     <string name="my_first_page_of_diary_looks_awesome">My first page of diary looks awesome !!</string>
