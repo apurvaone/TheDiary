@@ -60,7 +60,7 @@
             android:layout_height="wrap_content"
             android:textSize="14sp"
             android:ellipsize="end"
-            android:id="content"
+            android:id="@+id/content"
             android:padding="8dp"
             android:maxLines="3"
             android:text="@string/contenttext"/>
