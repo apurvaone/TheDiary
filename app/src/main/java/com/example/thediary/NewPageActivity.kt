@@ -20,26 +20,26 @@ class NewPageActivity : AppCompatActivity() {
         editTitle= findViewById(R.id.edit_title)
         editContent= findViewById(R.id.edit_content)
 
-        val button= findViewById<Button>(R.id.button_save)
+        val button = findViewById<Button>(R.id.button_save)
         button.setOnClickListener {
-
-            val replyIntent= Intent()
-            val extras: Bundle= Bundle()
-            extras.putString("title",editTitle.toString())
-            extras.putString("content",editContent.toString())
-
+            val replyIntent = Intent()
             if (TextUtils.isEmpty(editTitle.text)) {
                 setResult(Activity.RESULT_CANCELED, replyIntent)
-        }else {
-
-                replyIntent.putExtra(EXTRA_REPLY, extras)
+            } else {
+                val word = editTitle.text.toString()
+//                replyIntent.putExtra(EXTRA_REPLY, word)
+                replyIntent.apply {     putExtra(EXTRA_REPLY,editTitle.text.toString())
+                                        putExtra(EXTRA_REPLY2,editContent.text.toString())
+                                   }
                 setResult(Activity.RESULT_OK, replyIntent)
             }
-            finish()   }
-    }
+            finish()
+        }  }
+
 
     companion object {
         const val EXTRA_REPLY = "com.example.android.pagelistsql.REPLY"
+        const val EXTRA_REPLY2 = "com.example.android.pagelistsql.REPLY2"
     }
 
 }
