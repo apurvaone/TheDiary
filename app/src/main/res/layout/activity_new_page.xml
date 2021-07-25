@@ -21,9 +21,10 @@
         android:layout_height="wrap_content"
         android:minHeight="500dp"
         android:gravity="top"
+
         android:fontFamily="sans-serif-light"
         android:hint="Write out your min here..."
-        android:inputType="textAutoComplete"
+        android:inputType="textMultiLine"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:textSize="18sp" />

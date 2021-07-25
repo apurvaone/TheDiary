@@ -9,10 +9,11 @@ import androidx.activity.viewModels
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class MainActivity : AppCompatActivity() {
-
+    private lateinit var topAppBar:AppBarLayout
     private val newPageActivityRequestCode = 1
     private val pageViewModel: PageViewModel by viewModels {
         PageViewModelFactory((application as PagesApplication).repository)
@@ -20,6 +21,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        topAppBar= findViewById(R.id.topAppBar)
 
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerview)
         val adapter = PageListAdapter()
@@ -37,6 +39,9 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this@MainActivity, NewPageActivity::class.java)
             startActivityForResult(intent, newPageActivityRequestCode)
         }
+
+
+
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, intentData: Intent?) {
@@ -66,6 +71,8 @@ class MainActivity : AppCompatActivity() {
             ).show()
         }
     }
+
+
 }
 
 
