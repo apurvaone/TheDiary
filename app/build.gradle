@@ -41,6 +41,7 @@ dependencies {
 
     // Dependencies for working with Architecture components
     // You'll probably have to update the version numbers in build.gradle (Project)
+    implementation 'com.google.android.material:material:1.4.0'
 
     // Room components
     implementation "androidx.room:room-ktx:$rootProject.roomVersion"
