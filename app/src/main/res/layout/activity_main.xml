@@ -20,8 +20,9 @@
             app:title="Dear Diary..."
 
             app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
-            app:contentScrim="?attr/colorPrimary"
-            app:statusBarScrim="?attr/colorPrimaryVariant"
+            app:contentScrim="?attr/colorPrimaryDark"
+
+            app:statusBarScrim="?attr/colorPrimary"
             android:fitsSystemWindows="true"
             app:expandedTitleMarginStart="72dp"
             app:expandedTitleMarginBottom="28dp"
@@ -46,6 +47,8 @@
             android:layout_height="?attr/actionBarSize"
             app:title="Dear Diary..."
             app:menu="@menu/top_app_bar"
+            app:layout_collapseMode="pin"
+
             android:elevation="0dp"
             app:navigationIcon="@drawable/ic_baseline_menu_24"
             style="@style/Widget.MaterialComponents.Toolbar.Primary"

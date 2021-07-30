@@ -67,7 +67,7 @@
             android:layout_height="wrap_content"
             android:ellipsize="end"
             android:fontFamily="@font/andika"
-            android:maxLines="3"
+            android:maxLines="2"
             android:padding="8dp"
             android:text="@string/contenttext"
             android:textSize="16sp"
