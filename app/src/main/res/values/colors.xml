@@ -8,9 +8,11 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 <!--    <color name="colorPrimary">#256A63</color>-->
-    <color name="colorPrimary">#2C4E49</color>
-
-    <color name="colorPrimaryDark">#2C4E49</color>
+    <color name="colorPrimaary">#2C4E49</color>
+    <color name="colorPrimary">#e9caa5</color>
+    <color name="colorPrimaryDark">#e9caa5</color>
+    <color name="colorPrimaryyDark">#bea180</color>
+    <color name="colorPrimaaryDark">#2C4E49</color>
     <color name="colorAccent">#AD5D7D</color>
     <color name="buttonLabel">#FFFFFF</color>
 
