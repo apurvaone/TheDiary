@@ -1,9 +1,6 @@
 package com.example.thediary
 
-import androidx.room.Dao
-import androidx.room.Insert
-import androidx.room.OnConflictStrategy
-import androidx.room.Query
+import androidx.room.*
 import kotlinx.coroutines.flow.Flow
 
 @Dao
@@ -17,4 +14,11 @@ interface PageDao
 
     @Query("SELECT * FROM page_table ")
     fun getAlphabetizedWords(): Flow<List<Page>>
+
+     @Update
+     fun update(page: Page)
+
+
+
+
 }

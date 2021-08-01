@@ -5,5 +5,7 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity(tableName = "page_table")
-data class Page (@PrimaryKey @ColumnInfo(name = "title") val title:String, @ColumnInfo(name = "content") val content:String){
+data class Page (
+    @PrimaryKey @ColumnInfo(name = "title") val title:String,
+    @ColumnInfo(name = "content") val content:String){
 }
