@@ -15,10 +15,8 @@ interface PageDao
     @Query("SELECT * FROM page_table ")
     fun getAlphabetizedWords(): Flow<List<Page>>
 
-     @Update
-     fun update(page: Page)
-
-
+    @Update
+    fun update(page: Page)
 
 
 }
