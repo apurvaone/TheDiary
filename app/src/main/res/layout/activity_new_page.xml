@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
+    android:paddingTop="?android:attr/actionBarSize"
 
     android:layout_height="match_parent">
 
@@ -25,7 +26,7 @@
         android:gravity="top"
 
         android:fontFamily="sans-serif-light"
-        android:hint="Write out your min here..."
+        android:hint="Write out your mind here..."
         android:inputType="textMultiLine"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
