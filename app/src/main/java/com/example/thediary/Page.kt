@@ -7,5 +7,9 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "page_table")
 data class Page (
     @PrimaryKey @ColumnInfo(name = "title") val title:String,
-    @ColumnInfo(name = "content") val content:String){
+    @ColumnInfo(name = "content") val content:String,
+    @ColumnInfo(name = "date") val  date:String
+    )
+
+{
 }

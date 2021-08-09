@@ -32,9 +32,9 @@ public abstract class PageRoomDatabase:RoomDatabase()
             pageDao.deleteAll()
 
             // Add sample words.
-            var page = Page("My first diary page"," this was amazing day i started python today as i plan to shift to python in full pace, i took a small pythin course from mosh and loving it also i am enjoyig android development")
+            var page = Page("My first diary page"," this was amazing day i started python today as i plan to shift to python in full pace, i took a small pythin course from mosh and loving it also i am enjoyig android development","24/01/2001")
             pageDao.insert(page)
-            page = Page("Enjoyig the diary writing", "I have fallen in love with diary writing it gives great feeling of satisfaction and containment also it makes sure that i remain in good frame of mind")
+            page = Page("Enjoyig the diary writing", "I have fallen in love with diary writing it gives great feeling of satisfaction and containment also it makes sure that i remain in good frame of mind","24,01,2000")
             pageDao.insert(page)
 
             // TODO: Add your own words!

@@ -64,6 +64,7 @@ class NewPageActivity : AppCompatActivity() {
 //                replyIntent.putExtra(EXTRA_REPLY, word)
                 replyIntent.apply {     putExtra(EXTRA_REPLY,editTitle.text.toString())
                                         putExtra(EXTRA_REPLY2,editContent.text.toString())
+                    putExtra(EXTRA_REPLY3,dateText.text.toString())
                                    }
                 setResult(Activity.RESULT_OK, replyIntent)
             }
@@ -74,6 +75,7 @@ class NewPageActivity : AppCompatActivity() {
     companion object {
         const val EXTRA_REPLY = "com.example.android.pagelistsql.REPLY"
         const val EXTRA_REPLY2 = "com.example.android.pagelistsql.REPLY2"
+        const val EXTRA_REPLY3 = "com.example.android.pagelistsql.REPLY3"
     }
 
 }

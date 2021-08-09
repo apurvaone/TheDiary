@@ -20,7 +20,7 @@ class PageListAdapter: ListAdapter<Page, PageListAdapter.PageViewHolder>(PageCom
 
     override fun onBindViewHolder(holder: PageViewHolder, position: Int) {
         val current= getItem(position)
-        holder.bind(current.title, current.content)
+        holder.bind(current.title, current.content, current.date)
     }
 
 
@@ -28,11 +28,13 @@ class PageListAdapter: ListAdapter<Page, PageListAdapter.PageViewHolder>(PageCom
 
         private val titleItemView: TextView= itemView.findViewById(R.id.title)
         private val contentItemView:TextView= itemView.findViewById(R.id.content)
+        private val dateItemView:TextView= itemView.findViewById(R.id.date)
 
-        fun bind(text1: String?, text2: String)
+        fun bind(text1: String?, text2: String,text3:String)
         {
             titleItemView.text= text1
             contentItemView.text= text2
+            dateItemView.text=text3
         }
 
         companion object {

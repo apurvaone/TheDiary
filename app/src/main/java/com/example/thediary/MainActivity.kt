@@ -81,6 +81,7 @@ class MainActivity : AppCompatActivity() {
         super.onActivityResult(requestCode, resultCode, intentData)
         var titlestring:String=""
         var contentString:String=""
+        var dateString:String=""
         if (requestCode == newPageActivityRequestCode && resultCode == Activity.RESULT_OK) {
             intentData?.getStringExtra(NewPageActivity.EXTRA_REPLY)?.let { reply ->
 //                val word = Page(reply,"Test")
@@ -92,8 +93,13 @@ class MainActivity : AppCompatActivity() {
 //                pageViewModel.insert(word)
                  contentString= reply
             }
+            intentData?.getStringExtra(NewPageActivity.EXTRA_REPLY3)?.let { reply ->
+//                val word = Page(reply,"Test")
+//                pageViewModel.insert(word)
+                dateString= reply
+            }
 
-            val page = Page(titlestring, contentString)
+            val page = Page(titlestring, contentString,dateString)
             pageViewModel.insert(page)
 
         } else {
