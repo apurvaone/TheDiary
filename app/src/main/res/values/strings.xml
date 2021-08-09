@@ -9,4 +9,7 @@
     <string name="add_word">Add Page</string>
     <string name="my_first_page_of_diary_looks_awesome">My first page of diary looks awesome !!</string>
     <string name="contenttext">Today was awesome day of my life i resumed my intense study after a lot of day and i am feeling better it\'s awesome feeling also i gave a awesome viva of subject software engg.</string>
+    <string name="title2">title</string>
+    <string name="secondary_text">date</string>
+    <string name="supporting_text">content</string>
 </resources>
