@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/item_card"
 
-    app:cardCornerRadius="11dp"
+    app:cardCornerRadius="9dp"
 
 
     android:layout_marginTop="8dp"
