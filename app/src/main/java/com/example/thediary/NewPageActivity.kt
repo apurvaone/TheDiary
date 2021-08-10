@@ -27,7 +27,10 @@ class NewPageActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_new_page)
-
+        assert(
+            supportActionBar != null //null check
+        )
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         editTitle= findViewById(R.id.edit_title)
         editContent= findViewById(R.id.edit_content)
         dateText= findViewById(R.id.dateText)
@@ -70,6 +73,11 @@ class NewPageActivity : AppCompatActivity() {
             }
             finish()
         }  }
+
+    override fun onSupportNavigateUp(): Boolean {
+        finish()
+        return true
+    }
 
 
     companion object {
