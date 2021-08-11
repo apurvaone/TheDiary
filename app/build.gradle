@@ -38,7 +38,8 @@ dependencies {
 
     implementation "androidx.appcompat:appcompat:$rootProject.appCompatVersion"
     implementation "androidx.activity:activity-ktx:$rootProject.activityVersion"
-
+    implementation "androidx.navigation:navigation-fragment-ktx:2.3.0-alpha03"
+    implementation "androidx.navigation:navigation-ui-ktx:2.3.0-alpha03"
     // Dependencies for working with Architecture components
     // You'll probably have to update the version numbers in build.gradle (Project)
     implementation 'com.google.android.material:material:1.4.0'
